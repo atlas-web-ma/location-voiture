@@ -3,52 +3,112 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>[NOM SOCIETE] - Transport à [VILLE]</title>
+<title>Location de voiture | Khouribga, Casablanca</title>
 <style>
-body{font-family:Arial;margin:0;background:#f7f7f7}
-header{background:#0a2540;color:white;padding:20px;text-align:center}
-.hero{background:white;padding:40px;text-align:center}
-.btn{background:#25D366;color:white;padding:15px 25px;border-radius:8px;text-decoration:none;display:inline-block;margin-top:15px;font-weight:bold}
-.services{display:flex;gap:15px;justify-content:center;padding:20px;flex-wrap:wrap}
-.card{background:white;padding:20px;border-radius:10px;width:250px;box-shadow:0 2px 8px rgba(0,0,0,0.1)}
-footer{background:#0a2540;color:white;padding:20px;text-align:center;margin-top:20px}
-.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:15px;border-radius:50%;text-decoration:none;font-size:20px}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
+body{background:#f8f8f8;color:#111}
+header{display:flex;justify-content:space-between;align-items:center;padding:15px 5%;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.05);position:sticky;top:0;z-index:10}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:22px;line-height:1}
+.logo span{width:45px;height:45px;background:#ff7a00;border-radius:50%;display:flex;align-items:center;justify-content:center}
+nav{display:flex;gap:20px;align-items:center}
+nav a{text-decoration:none;color:#111;font-weight:600}
+nav a.active{border-bottom:3px solid #ff7a00}
+.btn-black{background:#111;color:#fff;padding:10px 18px;border-radius:10px;text-decoration:none;display:flex;gap:6px;align-items:center}
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:20px;padding:30px 5%;background:#fff}
+.hero h1{font-size:48px;line-height:1.1;margin-bottom:10px}
+.hero p{color:#555;margin-bottom:20px}
+.search{display:flex;gap:15px;background:#fff;border:1px solid #eee;padding:15px;border-radius:15px;box-shadow:0 5px 20px rgba(0,0,0,.05);flex-wrap:wrap}
+.search div{flex:1}
+.search label{font-size:12px;color:#666}
+.search b{display:block;margin-top:3px}
+.btn-orange{background:#ff7a00;color:#fff;border:none;padding:12px 20px;border-radius:10px;font-weight:700;cursor:pointer}
+.badges{display:flex;gap:10px;margin-top:15px;flex-wrap:wrap}
+.badge{border:1px solid #ffcfad;background:#fff4ec;padding:8px 14px;border-radius:20px;font-size:13px;font-weight:600;display:flex;gap:6px;align-items:center}
+.car-img{width:100%;border-radius:20px;object-fit:cover;height:100%}
+.popular{padding:30px 5%;text-align:center}
+.popular h2{font-size:28px}
+.cars{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;margin-top:20px}
+.card{background:#fff;padding:15px;border-radius:18px;box-shadow:0 4px 15px rgba(0,0,0,.06);text-align:left}
+.card img{width:100%;height:150px;object-fit:contain}
+.card h3{margin:10px 0 5px;text-align:center}
+.meta{font-size:12px;color:#555;display:flex;justify-content:center;gap:10px;margin-bottom:10px}
+.price{display:flex;justify-content:space-between;align-items:center}
+.price b{color:#ff7a00}
+.price button{background:#ff7a00;border:none;padding:8px 16px;border-radius:8px;font-weight:700;cursor:pointer}
+footer{background:#111;color:#fff;padding:20px 5%;display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px;margin-top:30px}
+.whatsapp{background:#25D366;color:#fff;padding:10px 18px;border-radius:10px;text-decoration:none;font-weight:700;display:inline-flex;gap:8px;align-items:center}
+@media(max-width:800px){.hero{grid-template-columns:1fr}.hero h1{font-size:32px}}
 </style>
 </head>
 <body>
 
 <header>
-<h1>[NOM SOCIETE]</h1>
-<p>Transport Touristique & Location Voiture à [VILLE]</p>
+  <div class="logo"><span>🚗</span>Location<br>de voiture</div>
+  <nav>
+    <a class="active" href="#">Accueil</a>
+    <a href="#">Véhicules</a>
+    <a href="#">Contact</a>
+    <a class="btn-black" href="https://wa.me/212600000000">Se connecter</a>
+  </nav>
 </header>
 
-<div class="hero">
-<h2>Besoin d'un transport confortable à [VILLE] ?</h2>
-<p>Chauffeur professionnel - Disponible 24/7 - Prix fixe</p>
-<a class="btn" href="https://wa.me/2126XXXXXXXX?text=Salam, bghit transport">📲 Réserver sur WhatsApp</a>
-</div>
+<section class="hero">
+  <div>
+    <h1>Louez une voiture de luxe</h1>
+    <p>Réservez votre voiture en quelques clics à Khouribga, Casablanca et partout au Maroc. Confort, sécurité et prix avantageux garantis.</p>
+    
+    <div class="search">
+      <div><label>📍 Lieu de prise en charge</label><b>Khouribga, Casablanca...</b></div>
+      <div><label>📅 Date de prise en charge</label><b>Lun. 14 Oct. 2024</b></div>
+      <div><label>📅 Date de retour</label><b>Ven. 18 Oct. 2024</b></div>
+      <button class="btn-orange">🔍 Rechercher</button>
+    </div>
 
-<div class="services">
-<div class="card">
-<h3>🚐 Transport Aéroport</h3>
-<p>Transfert aéroport Casa, Marrakech, Fès</p>
-</div>
-<div class="card">
-<h3>🚗 Location Voiture</h3>
-<p>Avec chauffeur ou sans chauffeur</p>
-</div>
-<div class="card">
-<h3>👨‍👩‍👧‍👦 Excursions</h3>
-<p>Excursions pour familles et groupes</p>
-</div>
-</div>
+    <div class="badges">
+      <div class="badge">🚚 Livraison gratuite</div>
+      <div class="badge">🛡️ Assurance incluse</div>
+      <div class="badge">💬 Support 7j/7 sur WhatsApp</div>
+    </div>
+  </div>
+  <img class="car-img" src="https://images.unsplash.com/photo-1555215695-3004980ad54e?w=800" alt="voiture luxe">
+</section>
+
+<section class="popular">
+  <h2>Véhicules populaires</h2>
+  <p>Les modèles les plus demandés, disponibles dès maintenant à partir de 300 MAD / jour</p>
+  
+  <div class="cars">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?w=500">
+      <h3>BMW Série 3</h3>
+      <div class="meta"><span>⚙️ Automatique</span><span>👤 5 places</span><span>❄️ Clim</span></div>
+      <div class="price"><b>300 MAD / jour</b><button onclick="window.open('https://wa.me/212600000000?text=Bghit BMW Serie 3','_blank')">Réserver</button></div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=500">
+      <h3>Mercedes Classe C</h3>
+      <div class="meta"><span>⚙️ Automatique</span><span>👤 5 places</span><span>❄️ Clim</span></div>
+      <div class="price"><b>300 MAD / jour</b><button onclick="window.open('https://wa.me/212600000000','_blank')">Réserver</button></div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?w=500">
+      <h3>Audi A3</h3>
+      <div class="meta"><span>⚙️ Automatique</span><span>👤 5 places</span><span>❄️ Clim</span></div>
+      <div class="price"><b>300 MAD / jour</b><button onclick="window.open('https://wa.me/212600000000','_blank')">Réserver</button></div>
+    </div>
+  </div>
+</section>
 
 <footer>
-<p>[NOM SOCIETE] - [VILLE] - Tel: 06 XX XX XX XX</p>
-<p>Site créé par Imane - Développement Web</p>
+  <div>
+    <b>Besoin d'aide pour réserver ?</b><br>
+    <small>Notre équipe est disponible 7/7 sur WhatsApp pour vous accompagner instantanément.</small>
+  </div>
+  <div>
+    <a class="whatsapp" href="https://wa.me/212600000000">Réserver sur WhatsApp</a><br>
+    <small>📍 Casablanca, Khouribga, Rabat<br>📞 +212 6 00 00 00 00</small>
+  </div>
 </footer>
-
-<a class="whatsapp" href="https://wa.me/2126XXXXXXXX">💬</a>
 
 </body>
 </html>
