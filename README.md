@@ -2,7 +2,7 @@
 
 Site vitrine pour agence de location de voitures. Réservation rapide et présentation de flotte.
 
-🔗 **Live Demo:** https://atlas-web-ma.github.io/location-voitures/
+🔗 **Live Demo:** https://atlas-web-ma.github.io/location-voiture/
 
 ## ✨ Features
 - Présentation des véhicules
